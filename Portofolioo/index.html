@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - Nama Kamu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #0d0e12;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 8%;
+      background-color: rgba(13, 14, 18, 0.9);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #1e293b;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+    .nav-links a {
+      color: #94a3b8;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .nav-links a:hover {
+      color: #38bdf8;
+    }
+    .btn-hire {
+      background-color: #f8fafc;
+      color: #0f172a;
+      padding: 0.5rem 1.2rem;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    /* Hero & About Section */
+    section {
+      padding: 4rem 8%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .hero {
+      text-align: center;
+      padding-top: 3rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      color: #94a3b8;
+      font-size: 1.1rem;
+    }
+    .about-card {
+      background-color: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+    .stats {
+      display: flex;
+      gap: 2rem;
+      margin: 1.5rem 0;
+    }
+    .stat-item h3 {
+      font-size: 1.8rem;
+      color: #38bdf8;
+    }
+
+    /* What I Can Do Section */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .skill-card {
+      background-color: #161b22;
+      border: 1px solid #21262d;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+    .skill-card h3 {
+      color: #38bdf8;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Achievement Section */
+    .achievement-item {
+      background-color: #161b22;
+      border-left: 4px solid #38bdf8;
+      padding: 1rem 1.5rem;
+      margin-top: 1rem;
+      border-radius: 0 8px 8px 0;
+    }
+
+    /* Contact Section */
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+    }
+    .contact-info a {
+      display: block;
+      color: #38bdf8;
+      margin-bottom: 0.8rem;
+      text-decoration: none;
+    }
+    .btn-resume {
+      display: inline-block;
+      background-color: #38bdf8;
+      color: #0f172a;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #64748b;
+      font-size: 0.85rem;
+      border-top: 1px solid #1e293b;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Heny Stiawati</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">What I Can Do</a></li>
+      <li><a href="#achievement">Achievement</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-hire">Hire Me</a>
+  </nav>
+
+  <!-- Hero & About Me Section -->
+  <section id="about" class="hero">
+    <h1>Halo, Saya Heny Stiawati 👋</h1>
+    <p>Mahasiswa Sistem Informasi | Web Developer & Tech Enthusiast</p>
+    
+    <div class="about-card" style="text-align: left;">
+      <h2>About Me</h2>
+      <p style="margin-top: 0.5rem; color: #94a3b8;">
+        <strong>NIM:</strong> 26051214042<br>
+        <strong>Prodi:</strong> Sistem Informasi<br>
+        <strong>Aktivitas Saat Ini:</strong> Belajar dasar pemrograman web, struktur data, dan membangun proyek portofolio.
+      </p>
+      
+      <div class="stats">
+        <div class="stat-item">
+          <h3>5+</h3>
+          <p>Proyek Belajar</p>
+        </div>
+        <div class="stat-item">
+          <h3>100%</h3>
+          <p>Semangat Maba</p>
+        </div>
+      </div>
+      
+      <p>Saya tertarik dalam merancang dan mengembangkan solusi digital yang efisien, responsif, dan mudah digunakan.</p>
+    </div>
+  </section>
+
+  <!-- What I Can Do Section -->
+  <section id="skills">
+    <h2>What I Can Do</h2>
+    <p style="color: #94a3b8;">Skill dan tools yang sedang dan telah saya pelajari:</p>
+    
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>01 / Front-end Web</h3>
+        <p>Menguasai dasar pembuatan struktur dan tampilan web menggunakan HTML5, CSS3, dan JavaScript.</p>
+      </div>
+      <div class="skill-card">
+        <h3>02 / Tools & Workflow</h3>
+        <p>Visual Studio Code, Git, GitHub untuk kontrol versi, dan Live Server.</p>
+      </div>
+      <div class="skill-card">
+        <h3>03 / AI Assistance</h3>
+        <p>Memanfaatkan tools AI (ChatGPT, Claude, Google AI Studio) untuk mempercepat proses riset dan debugging.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievement Section -->
+  <section id="achievement">
+    <h2>Achievement</h2>
+    <p style="color: #94a3b8;">Pencapaian dan pengalaman yang pernah diraih:</p>
+    
+    <div class="achievement-item">
+      <h3>Mahasiswa Baru Sistem Informasi</h3>
+      <p><strong>Tahun:</strong> 2026 | <strong>Lembaga:</strong> Universitas Negeri Surabaya</p>
+      <p>Lolos seleksi masuk perguruan tinggi jalur SNBP dan aktif mengikuti kegiatan akademik serta kepanitiaan.</p>
+    </div>
+
+    <div class="achievement-item">
+      <h3>Sertifikat</h3>
+      <p><strong>Tahun:</strong> 2026 | <strong>Penyelenggara:Google for education</strong> Platform</p>
+      <p>Menyelesaikan Pelatihan google gemini education for student.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Let's Work Together</h2>
+    <p style="color: #94a3b8;">Tertarik untuk berkolaborasi atau diskusi? Silakan hubungi saya melalui:</p>
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><strong>Email:</strong></p>
+        <a href="henisetiawati1620@gmail.com">henisetiawati1620@gmail.com</a>
+        
+        <p><strong>GitHub:</strong></p>
+        <a href="https://github.com/henystiawati" target="_blank">github.com/henystiawati</a>
+        
+        <p><strong>LinkedIn:</strong></p>
+        <a href="https://www.linkedin.com/in/heny-stiawati-135862430" target="_blank">linkedin.com/in/heny-stiawati-135862430</a>
+      </div>
+      
+      <div>
+        <a href="#" class="btn-resume">Download Resume / CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Heny Stiawati. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
